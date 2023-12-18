@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animes - Bootstrap</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <link rel="stylesheet" href="./main.css">
+    <style>
+        carousel-item, img {
+            height: 65vh;
+            width: 100%;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        #card-img {
+            height: 35vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div data-bs-interval="3000" class="carousel-item active">
+                    <img class="d-block w-100" src="./images/generos-de-animes.png" alt="">                  
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block" src="./images/wallpaper one piece.jpeg" alt="">
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block" src="./images/1_animes_japoneses_entenda_o_que_sao_e_o_porque_de_fazerem_tanto_sucesso-18726989.jpg" alt="">
+                </div>           
+            </div> 
+            <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" type="button" class="carousel-control-prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button data-bs-target="#carousel-exemplo" data-bs-slide="next" type="button" class="carousel-control-next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button class="active" type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="0"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+            </div>             
+        </div>
+        <h1>Os melhores animes estão aqui</h1>
+        <div class="row">
+            <div class="p-3 col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <img id="card-img" src="./images/22142517995570.webp" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">Dragon Ball Super</h4>
+                        <p class="card-text">Dragon Ball Super é uma série de anime criada por Akira Toriyama e produzida pela Toei Animation</p>
+                        <a href="#" class="btn btn-primary">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="p-3 col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <img id="card-img" src="./images/images.jpg" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">Naruto</h4>
+                        <p class="card-text">Naruto é uma série de mangá escrita e ilustrada por Masashi Kishimoto, que conta a história de Naruto Uzumaki</p>
+                        <a href="#" class="btn btn-primary">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="p-3 col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <img id="card-img" src="./images/cavaleiros-do-zodiaco-tcc.webp" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">Os cavaleiros do Zodíaco</h4>
+                        <p class="card-text">Os Cavaleiros do Zodíaco é uma série japonesa de mangá e anime escrito e ilustrada por Masami Kurumada</p>
+                        <a href="#" class="btn btn-primary">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+
+
+
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
